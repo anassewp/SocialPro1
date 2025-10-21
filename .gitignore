@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*.session
+.env
+*.db
+/data/.fernet.key

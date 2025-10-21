@@ -1,0 +1,21 @@
+[project]
+name = "socialpro"
+version = "0.1.0"
+description = "Telegram campaign management backend"
+authors = [{name = "SocialPro Team"}]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy>=2.0",
+    "pydantic>=1.10",
+    "telethon",
+    "cryptography"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
